@@ -87,6 +87,12 @@ export default class WorldMap {
       this.legend._div.innerHTML = legendHtml;
     };
     this.legend.addTo(this.map);
+
+    // Optionally display legend in different DOM element.
+    if (this.ctrl.panel.legendContainerSelector) {
+      $(this.ctrl.panel.legendContainerSelector).append(this.legend._div);
+    }
+
   }
 
   needToRedrawCircles(data) {
