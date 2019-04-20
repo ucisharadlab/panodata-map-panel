@@ -150,7 +150,7 @@
       </ul>
     </div>
     <h6 ng-show="ctrl.showTableOptions() || ctrl.panel.locationData === 'geohash'">Field Mapping</h6>
-    <div class="gf-form" ng-show="ctrl.panel.locationData === 'table'">
+    <div class="gf-form" ng-show="ctrl.showTableOptions()">
       <label class="gf-form-label width-12">Table Query Format</label>
       <div class="gf-form-select-wrapper max-width-10">
         <select class="input-small gf-form-input" ng-model="ctrl.panel.tableQueryOptions.queryType" ng-options="t for t in ['geohash', 'coordinates']"
