@@ -1,6 +1,8 @@
 # Changelog
 
 ## development
+
+## v0.16.0
 - Add compatibility with Grafana 8
 - Add Makefile to assist in packaging and publishing
 - Overlay image can now be refreshed with the dashboard. Thanks, @jreyesr!
