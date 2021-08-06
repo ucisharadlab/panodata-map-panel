@@ -9,14 +9,15 @@
       "name": "Grafana Labs",
       "url": "https://grafana.com"
     },
-    "keywords": ["map", "panel"],
+    "keywords": ["grafana", "map", "panel", "plugin", "worldmap", "leaflet"],
     "logos": {
       "small": "images/worldmap_logo.svg",
       "large": "images/worldmap_logo.svg"
     },
     "links": [
-      {"name": "Project site", "url": "https://github.com/panodata/panodata-map-panel"},
       {"name": "MIT License", "url": "https://github.com/panodata/panodata-map-panel/blob/main/LICENSE"}
+      {"name": "Website", "url": "https://community.panodata.org/t/panodata-map-panel-for-grafana/121"},
+      {"name": "GitHub", "url": "https://github.com/panodata/panodata-map-panel"},
     ],
     "screenshots": [
       {"name": "World", "path": "images/worldmap-world.png"},
