@@ -49,11 +49,10 @@ source .nenv/bin/activate
 3. Commit changes
 4. Tag repository: `git tag 0.xx.0`
 5. Push repository: `git push && git push --tags`
-6. Build plugin:
-   - `npx grafana-toolkit plugin:ci-build`
-   - `npx grafana-toolkit plugin:ci-build --finish`
-7. Create zip package: `npx grafana-toolkit plugin:ci-package`
+6. Build and package: `make package`
    When this process succeeds, packages can be found within the `ci/packages/` folder.
    The `Error signing manifest` warning can optionally be ignored, YMMV.
-
-Steps 6. and 7. can be shortened by invoking `make package publish`.
+7. Upload to GitHub release assets:
+   - `brew install github-release`
+   - `export GITHUB_TOKEN=abcdef`
+   - `make publish`
